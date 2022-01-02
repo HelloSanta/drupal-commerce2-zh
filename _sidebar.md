@@ -1,4 +1,4 @@
 <!-- docs/_sidebar.md -->
 
-* [首頁](/)
-* [Order 訂單](order/order.md)
+* [Drupal Commerce 2](/)
+* [E-commerce 101](docs/E-commerce.md)
