@@ -6,4 +6,5 @@
 </aside>
 
 > 閱讀此文件之前，是假設您已經熟悉、理解Drupal 8/9 的基礎運用。關於Drupal的基礎使用，請見[官網介紹](https://www.drupal.org/documentation)
->
+
+此文件使用 [Docsify](https://docsify.js.org/) 建置，請遵照官方文件進行開發跟貢獻，謝謝
