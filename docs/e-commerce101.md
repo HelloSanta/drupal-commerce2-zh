@@ -61,24 +61,4 @@ flowchart TD
 ⚠️ 串接金流請審慎確定其符合資安規範，如HTTPS協定、XSS防範等，請參考 <a href="https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/migrated_content" target="_blank">OWASP</a>與金流商提供之串接資訊
 </blockquote>
 
-## 電商系統基礎結構
-
-Drupal Commerce 2 定義的資料結構。<br>
-(以下列出內部子模組項目與相關功能)
-
-| 電商結構<br>（模組英文名） | <div style="width:60px;">中文</div> | 說明 |
-| --- | --- | --- |
-| store | 商店 | 定義商店基本資訊，如地址、電話、幣值等一個平台上可定義多種商店 |
-| cart | 購物車 | 定義購物車具備的行為，<br>觀看訂單品項、更動、移除、觀看暫定金額等功能 |
-| checkout | 付款 | 付款流程的相關規則 |
-| product | 商品 | 定義商品所具有的資料。如購買一台筆電：商品名稱、商品說明等 |
-| attribute | 商品屬性 | 商品具有的屬性，常為共有的資料別。如「大小」、「顏色」、「容量」 |
-| product_variation | 商品品項 | 商品中個別種類，例如一件褲子可以有多個顏色，每個顏色就是一種款式會有所屬的唯一商品SKU(stock keeping unit 最小存貨單位)。<br>如：<br>1. 紅色/M/奈米防風軟殼衣(SKU nanoshell-red-medium)、藍色/S/奈米防風軟殼衣 (nanoshell-blue-small)<br>2. 一款iPhone 13, 有紅青綠白黑五種品項，各有一個SKU編碼作為商品唯一識別碼 |
-| order_item | 訂單品項 | 訂單品項，指購物車內的單一品項。每一個訂單品項會關聯至一項商品品項 |
-| order | 訂單 | 訂單應包含以下項目:<br>訂單品項、數量、折扣金額、應付金額、總金額、運送資訊、支付資訊 |
-| payment | 支付 | 參照至訂單，紀錄訂單接收之支付金額<br>需呈現與金流商執行退款、收款之執行結果與狀態。<br>例如一訂單呈現多筆交易紀錄。 |
-| conditions | 條件 | 運用於Payment (付款) 以及 Promotions (促銷) 系統功能中，限制此付款通道(payment_gateway)的呈現條件。|
-| promotions | 促銷 | 促銷或折扣功能。<br>可設定多種折扣條件、應折抵金額、折扣碼使用期限等 |
-| tax | 稅金 | 替店家中加入稅金，自訂/選用內建稅制，將影響商品價格的計算與訂定 |
-| log | 系統日誌 | 紀錄電商行為於系統日誌中 |
-| number_pattern | 編碼規則 | 訂單建立時被賦予的編號固定規則 |
+---
